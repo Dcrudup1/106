@@ -6,28 +6,40 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+header {
+    text-align: center;
+    padding: 20px 0; /* Add padding for spacing */
+    background-color: #333; /* Add a background color */
+    color: white; /* Set text color to white */
+}
+
 main {
     display: flex;
-    padding: 20px; /* Add some padding for better spacing */
+    flex-direction: column; /* Change the flex direction to column */
+}
+
+#list, #form {
+    margin-top: 20px; /* Add margin to the sections for spacing */
 }
 
 #list {
-    background-color: #7FFFD4; /* Use a named color or a hex value */
-    height: 100px;
-    flex: 8;
-    padding: 20px; /* Add padding to the section */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    background-color: #7FFFD4;
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #form {
-    background-color: #DCDCDC; /* Use a named color or a hex value */
-    height: 100px;
-    flex: 4;
-    padding: 20px; /* Add padding to the section */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    background-color: #DCDCDC;
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Add hover effect to the sections for interaction */
+.task-item {
+    font-size: 14px; /* Adjust the font size for the task items */
+}
+
 #list:hover, #form:hover {
     transform: scale(1.02);
     transition: transform 0.3s ease-in-out;
